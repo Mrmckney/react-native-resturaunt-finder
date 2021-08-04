@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "ResturauntFinder",
+    "slug": "ResturauntFinder",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "ResturauntFinder"
+}
