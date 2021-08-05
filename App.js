@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { SafeAreaView, ScrollView, View, Text } from 'react-native';
-import Header from './components/Header'
-import Main from './components/Main';
-import styles from './styles'
+import 'react-native-gesture-handler'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
+import Main from './screens/HomeScreen'
+import Restaurant from './screens/RestaurantScreen'
+import AddNewScreen from './screens/AddNewScreen'
+
+const Stack = createStackNavigator()
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View style={styles.container}>
-            <Header />
-            <Main />
-            <StatusBar style="auto" />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name='Main'
+          component={Main}
+          options={{ title: 'Recomended Restaurants' }}
+        />
+        <Stack.Screen
+          name='Restaurant'
+          component={Restaurant}
+          options={{ title: 'Restaurant' }}
+        />
+        <Stack.Screen
+          name='AddNewRestaurant'
+          component={AddNewScreen}
+          options={{ title: 'Add New Restaurant'}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
