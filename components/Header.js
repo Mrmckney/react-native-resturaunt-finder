@@ -7,7 +7,7 @@ function Header() {
     return(
         <View>
             <Text style={styles.header}>
-                Recommended Restauraunts
+                Recommended Restaurants
             </Text>
         </View>
     )

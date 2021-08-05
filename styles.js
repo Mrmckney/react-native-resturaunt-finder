@@ -11,6 +11,7 @@ export default StyleSheet.create({
         fontWeight: '700',
         marginBottom: 30,
         marginTop: 20,
+        
     },
     name: {
         justifyContent: 'center',

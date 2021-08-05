@@ -7,13 +7,13 @@ import { useEffect } from 'react'
 
 function Main(){
     
-    const [restaurants, setRestauraunts] = useState([])
+    const [restaurants, setRestaurants] = useState([])
 
     useEffect(() => {
         fetch('https://bocacode-intranet-api.web.app/restaurants')
             .then(response => response.json())
             .then(allData => {
-                setRestauraunts(allData)   
+                setRestaurants(allData)   
             })
             .catch(err => alert(err))
     }, [])

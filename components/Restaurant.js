@@ -3,7 +3,7 @@ import { View, Text, Image } from 'react-native'
 
 import styles from '../styles'
 
-function Restauraunt({entireRestaurant}) {
+function Restaurant({entireRestaurant}) {
 
     const {photoUrl, name, address} = entireRestaurant
     
@@ -18,4 +18,4 @@ function Restauraunt({entireRestaurant}) {
     )
 }
 
-export default Restauraunt
+export default Restaurant
