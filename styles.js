@@ -24,6 +24,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         fontSize: 15,
         fontWeight: '300',
-        marginBottom: 25,
+        marginBottom: 25
+
     }
 })

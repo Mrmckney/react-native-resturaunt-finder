@@ -14,7 +14,6 @@ function Restauraunt({entireRestaurant}) {
             </Text>
             <Text style={styles.name}>{name}</Text>
             <Text style={styles.add}>{address}</Text>
-            
         </View>
     )
 }

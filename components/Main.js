@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
-import { View, Text, ImageBackground } from 'react-native'
+import { View, Text } from 'react-native'
 import Restaurant from './Restaurant'
 import styles from '../styles'
 import { useEffect } from 'react'
@@ -20,10 +20,12 @@ function Main(){
 
     return(
         <View>
+            <Text>
             {restaurants.map(restaurant => {
                 console.log()
                 return <Restaurant entireRestaurant={restaurant}/>
             })} 
+            </Text>
         </View>
     )
 }
