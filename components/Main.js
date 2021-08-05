@@ -21,8 +21,7 @@ function Main(){
     return(
         <View>
             <Text>
-            {restaurants.map(restaurant => {
-                console.log()
+            {restaurants?.map(restaurant => {
                 return <Restaurant entireRestaurant={restaurant}/>
             })} 
             </Text>

@@ -10,11 +10,9 @@ export default function App() {
     <ScrollView>
       <SafeAreaView>
         <View style={styles.container}>
-          
             <Header />
             <Main />
             <StatusBar style="auto" />
-          
         </View>
       </SafeAreaView>
     </ScrollView>
