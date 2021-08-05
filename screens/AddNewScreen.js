@@ -1,9 +1,10 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React, { useState } from 'react'
 import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native'
 
 import styles from '../styles'
 
-function AddNewScreen() {
+function AddNewScreen({navigation}) {
 
     const [restaurantName, setRestaurantName] = useState('')
     const [address, setAddress] = useState('')
@@ -26,7 +27,11 @@ function AddNewScreen() {
             },
             body: JSON.stringify(newRestaurant)
         })
-            .then(() => Alert.alert('Added New Restaurant'))
+            .then(() => {
+                Alert.alert('Added New Restaurant')
+                navigation.navigate('Main')
+            }
+                )
             .catch(err => alert(err))
     }
 
