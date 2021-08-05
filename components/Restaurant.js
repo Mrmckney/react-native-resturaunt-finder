@@ -9,9 +9,7 @@ function Restaurant({entireRestaurant}) {
     
     return(
         <View>
-            <Text>
-                <Image style={{width: 450, height: 250}} source={{uri:photoUrl}}/>
-            </Text>
+            <Image style={{width: 450, height: 250}} source={{uri:photoUrl}}/>
             <Text style={styles.name}>{name}</Text>
             <Text style={styles.add}>{address}</Text>
         </View>

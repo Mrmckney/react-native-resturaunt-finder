@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
+
 import Restaurant from './Restaurant'
 import styles from '../styles'
-import { useEffect } from 'react'
+
 
 function Main(){
     

@@ -7,14 +7,14 @@ import styles from './styles'
 
 export default function App() {
   return (
-    <ScrollView>
-      <SafeAreaView>
+    <SafeAreaView>
+      <ScrollView>
         <View style={styles.container}>
             <Header />
             <Main />
             <StatusBar style="auto" />
         </View>
-      </SafeAreaView>
-    </ScrollView>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
