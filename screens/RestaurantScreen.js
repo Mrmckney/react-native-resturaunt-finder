@@ -11,7 +11,7 @@ function Restaurant({route, navigation}) {
         <View>
             <Image style={{width: 450, height: 250}} source={{uri:photoUrl}}/>
             <Text style={styles.name}>{name}</Text>
-            <Text>{address}</Text>
+            <Text style={styles.address}>{address}</Text>
             <Button title='Add New Restaurant' onPress={() => navigation.navigate('AddNewRestaurant')}/>
         </View>
     )

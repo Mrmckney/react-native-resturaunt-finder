@@ -14,7 +14,7 @@ export default StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         fontSize: 30,
-        fontWeight: '300',
+        fontWeight: '400',
         marginTop: 15,
         paddingLeft: 10,
     },
@@ -28,6 +28,10 @@ export default StyleSheet.create({
 
     },
     rating: {
+        alignSelf: 'flex-end',
+        paddingRight: 15,
+        fontWeight: '500',
+        fontSize: 20,
     },
     inputBox: {
         borderColor: '#666', 

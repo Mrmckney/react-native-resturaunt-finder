@@ -20,9 +20,6 @@ function Main({ navigation }) {
 
     return (
         <View >
-            <Text>
-            
-            </Text>
             <ScrollView>
                 <SafeAreaView style={styles.container}>
                     {restaurants?.map(restaurant => {
