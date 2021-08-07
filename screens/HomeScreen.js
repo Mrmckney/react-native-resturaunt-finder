@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button, SafeAreaView, ScrollView, StatusBar } from 'react-native'
 
-import Box from '../components/Box'
+import RestaurantInfo from '../components/RestaurantInfo'
 import styles from '../styles'
 
 
@@ -25,7 +25,7 @@ function Main({ navigation }) {
                     {restaurants?.map(restaurant => {
                         return (
                             <View key={restaurant.id}>
-                                <Box entireRestaurant={restaurant} />
+                                <RestaurantInfo entireRestaurant={restaurant} />
                                 <Button title='Details' color='red' onPress={() => {
                                     navigation.navigate('Restaurant', { restaurant: restaurant })
                                 }}
